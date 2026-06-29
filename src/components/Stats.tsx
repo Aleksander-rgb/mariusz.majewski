@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const STATS = [
   {
     value: 15000,
-    suffix: "",
-    label: "więźniów w Makala",
-    note: "proj. na 1 500",
-  },
-  {
-    value: 3,
     suffix: "+",
-    label: "miesiące w więzieniu",
-    note: "",
+    label: "WIĘŹNIÓW W MAKALA",
+    note: "zaprojektowane na 1 500 miejsc",
   },
   {
     value: 100,
     suffix: "+",
-    label: "redakcji na świecie",
-    note: "",
+    label: "DNI WALKI O PRZETRWANIE",
+    note: "codziennie dochodziło do morderstw",
+  },
+  {
+    value: 200,
+    suffix: "+",
+    label: "REDAKCJI NA ŚWIECIE",
+    note: "opisało tę historię",
   },
   {
     value: 6,
     suffix: "",
-    label: "kontynentów zasięg",
-    note: "",
+    label: "KONTYNENTÓW",
+    note: "światowy zasięg medialny",
   },
 ];
 

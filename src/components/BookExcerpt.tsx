@@ -2,12 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const EXCERPT = `Obudziłem się na betonowej podłodze. Nie wiedziałem, która godzina — w Makala nie ma zegarów. Jest za to hałas. Nieustanny, gęsty, ludzki.
-  Piętnaście tysięcy ciał ściśniętych w przestrzeni zaprojektowanej dla jednej dziesiątej z nich.
+const EXCERPT = `Nie wiedziałem, jaki jest wyrok, wyłapałem tylko słowa: „dziesięć milionów" i „Andrzej Duda". Ale nie miałem pojęcia, w jakim kontekście te słowa padły.
+(...)
+Dudniło mi w uszach, to wszystko wydawało mi się nierealne.
+Nagle naszą rozmowę przerwał więzień z karteczką, który burknął: „Masz widzenie". Zabrał mnie do biura zastępcy naczelnika. W środku czekała na mnie Carine.
 
-  Pierwsza myśl: żyję. Druga: muszę znaleźć wodę.
-
-  Nikt tu nie pyta, skąd jesteś. Pytają, z czym przyszedłeś. Jedzenie, leki, pieniądze — waluta przetrwania. Ja przyszedłem z niczym prócz dokumentów, których nikt nie chciał czytać, i nazwiska adwokatki, która jeszcze nie wiedziała, że ją potrzebuję.`;
+– No co jest, na litość boską?! Mów wreszcie, jaki mam wyrok! – krzyknąłem od razu, gdy ją zobaczyłem.
+– Odwołamy się. Na pewno ten wyrok unieważnią – tłumaczyła zdenerwowana.
+– Ale jaki?! Mów wprost: kara śmierci, tak? Powieszą mnie? No mów!`;
 
 export default function BookExcerpt() {
   const [displayed, setDisplayed] = useState("");

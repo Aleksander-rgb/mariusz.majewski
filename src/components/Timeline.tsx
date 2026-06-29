@@ -5,39 +5,39 @@ import { useEffect, useRef, useState } from "react";
 const EVENTS = [
   {
     tag: "Zatrzymanie",
-    date: "Styczeń 2024",
-    title: "Kinszasa. Bez ostrzeżenia.",
-    body: "Bez zarzutów, bez tłumacza. Bezpodstawne oskarżenie o szpiegostwo i sabotaż — w języku, którego nie rozumiał.",
+    date: "Luty 2024",
+    title: "Kinszasa. Wszystko zmieniło się w jednej chwili.",
+    body: "Bezpodstawnie oskarżony o szpiegostwo i sabotaż za polski paszport. Bez kontaktu z rodziną.",
+  },
+  {
+    tag: "Więzienie",
+    date: "Marzec 2024",
+    title: "Jest jedynym białym wśród ponad 15 tysięcy więźniów.",
+    body: "W więzieniu zbudowanym dla 1500 osób każdego dnia walczy o życie. Głód, choroby, przemoc i śmierć stały się codziennością.",
   },
   {
     tag: "Proces",
-    date: "Luty 2024",
-    title: "Sala sądowa. Cisza.",
-    body: "Rozprawa w języku kongijskim. Adwokatka Carine jako jedyny łącznik ze światem. Mariusz nie rozumiał ani słowa wyroku.",
+    date: "Kwiecień 2024",
+    title: "Spektakl, którego nie rozumiał.",
+    body: "Proces toczył się po francusku i był transmitowany przez media. Każde słowo mogło decydować o jego życiu, ale nie rozumiał ich znaczenia.",
   },
   {
     tag: "Wyrok",
-    date: "Marzec 2024",
-    title: '„Dziesięć milionów i... dożywocie."',
-    body: "Tak Majewski zrozumiał wyrok przez adwokatkę. Sala milczała. On też.",
-  },
-  {
-    tag: "Makala",
-    date: "Marzec – Kwiecień 2024",
-    title: "15 000 więźniów. Proj. na 1 500.",
-    body: "Największe więzienie Afryki Centralnej. Każdy dzień — walka o przeżycie. Jedzenie, miejsce, powietrze.",
+    date: "Maj 2024",
+    title: "Najpierw śmierć. Potem dożywocie i 10 milionów dolarów.",
+    body: "Nie zrozumiał ani wyroku, ani uzasadnienia. Bez obrońcy. Bez tłumacza. Był wtedy całkowicie sam.",
   },
   {
     tag: "Interwencja",
-    date: "Kwiecień 2024",
-    title: "Gra dyplomatyczna na najwyższym szczeblu.",
-    body: "Prezydent RP Andrzej Duda. Minister Radosław Sikorski. Polska uruchomiła kanały, o których nie pisze się w gazetach.",
+    date: "Maj 2024",
+    title: "Rozpoczęła się walka o powrót.",
+    body: "W sprawę zaangażowały się służby dyplomatyczne na najwyższym szczeblu z Prezydentem RP na czele. Pomoc nadeszła z wielu stron, a presja międzynarodowa zaczęła rosnąć.",
   },
   {
     tag: "Powrót",
     date: "Maj 2024",
     title: "Wrócił.",
-    body: '„Śmierć była blisko każdego dnia, ale miłość do dzieci była silniejsza. Wróciłem — dzięki ludziom."',
+    body: "Śmierć była blisko, ale miłość do dzieci okazała się silniejsza niż strach. Przeżył i wrócił dzięki ludziom, którzy nie przestali walczyć o jego życie.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Timeline() {
             className="text-[#F5F5F5] text-2xl md:text-3xl leading-snug"
             style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
           >
-            „To nie była sprawa sądowa.
+            „To nie była zwykła sprawa sądowa.
             <br />
             To była gra między państwami."
           </blockquote>
@@ -111,7 +111,7 @@ export default function Timeline() {
             {EVENTS.map((event, i) => (
               <div
                 key={event.tag}
-                className="relative flex gap-8 md:gap-12 pb-14 last:pb-0"
+                className="relative flex gap-8 md:gap-12 pb-7 last:pb-0"
                 style={{
                   opacity: visible ? 1 : 0,
                   transform: visible ? "translateY(0)" : "translateY(16px)",

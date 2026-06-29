@@ -49,31 +49,43 @@ export default function About() {
             </h2>
 
             <p
-              className="text-[#888888] text-base md:text-lg leading-[1.85] mb-5"
+              className="text-[#888888] text-base leading-[1.85] mb-4"
               style={{ fontFamily: "var(--font-inter)" }}
             >
-              Dziennikarz, podróżnik i przedsiębiorca. Przez lata budował biznes
-              na styku Europy i Afryki — aż pewnego dnia granica między
-              podróżą a tragedią zniknęła w jednej chwili.
+              Podróżnik, mówca publiczny, przedsiębiorca i autor książki „Kongijskie piekło".
             </p>
 
             <p
-              className="text-[#888888] text-base md:text-lg leading-[1.85] mb-5"
+              className="text-[#888888] text-base leading-[1.85] mb-4"
               style={{ fontFamily: "var(--font-inter)" }}
             >
-              W styczniu 2024 roku został zatrzymany w Kinszasie. Bez tłumacza,
-              bez zrozumiałych zarzutów, bez kontaktu z rodziną. Trafił do
-              Makala — więzienia zaprojektowanego na 1&nbsp;500 osób, w którym
-              przebywa ponad 15&nbsp;000.
+              Pierwszy Polak przed czterdziestym rokiem życia, który odwiedził wszystkie 193 państwa
+              świata – i jeden z dziesięciu najbardziej podróżujących ludzi na świecie według rankingu
+              Most Traveled People. Członek prestiżowego Stowarzyszenia Mensa. W 2017 roku ustanowił
+              rekord Guinnessa na najdłuższy dzień w historii życia człowieka, przez lata zarządzał
+              wieloma firmami, aż w lutym 2024 roku jego życie zmieniło się całkowicie.
             </p>
 
             <p
-              className="text-[#888888] text-base md:text-lg leading-[1.85] mb-8"
+              className="text-[#888888] text-base leading-[1.85] mb-4"
               style={{ fontFamily: "var(--font-inter)" }}
             >
-              Po powrocie do Polski postanowił opisać to, co przeżył — nie po
-              to, by rozliczyć winnych, ale po to, by świat zobaczył prawdę
-              o kongijskim systemie więziennym i sile ludzkiej determinacji.
+              Został zatrzymany w Demokratycznej Republice Konga i trafił do czterech więzień.
+              Torturowany i skazany na powolną śmierć spędził tam ponad sto dni, walcząc
+              o przetrwanie i powrót do swojej partnerki i czworga dzieci.
+            </p>
+
+            <p
+              className="text-[#888888] text-base leading-[1.85] mb-8"
+              style={{ fontFamily: "var(--font-inter)" }}
+            >
+              Po uwolnieniu postanowił opowiedzieć tę historię światu. Tak powstało „Kongijskie
+              piekło" – zapis oparty na prawdziwych wydarzeniach, które obiegły media na sześciu
+              kontynentach i zostały opisane przez ponad 200 redakcji na całym świecie.
+              <br /><br />
+              Dziś jako autor i mówca publiczny opowiada o odporności psychicznej, podejmowaniu
+              decyzji pod presją i sile więzi rodzinnych, które pomogły mu przetrwać najtrudniejszy
+              okres w życiu.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6">
@@ -88,9 +100,8 @@ export default function About() {
                   className="text-[#888888] text-xs leading-relaxed"
                   style={{ fontFamily: "var(--font-inter)" }}
                 >
-                  Współautor. Dziennikarz śledczy, który przez miesiące
-                  pomagał zrekonstruować przebieg wydarzeń i kontekst
-                  dyplomatyczny sprawy.
+                  Współautor książki. Dziennikarz śledczy, który pomógł odtworzyć przebieg
+                  wydarzeń i ich międzynarodowy kontekst.
                 </p>
               </div>
             </div>

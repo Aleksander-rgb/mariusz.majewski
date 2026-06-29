@@ -5,47 +5,47 @@ import { useEffect, useRef, useState } from "react";
 const QUESTIONS = [
   {
     q: "Co tak naprawdę zarzucano Mariuszowi Majewskiemu?",
-    a: "Mariusz był oskarżany o szpiegostwo i sabotaż. Zarzuty były bezpodstawne — nigdy nie przedstawiono mu żadnych dowodów. Rozprawa toczyła się w języku kongijskim, bez tłumacza, a on nie rozumiał ani treści oskarżenia, ani ogłoszonego wyroku.",
+    a: "Został oskarżony o szpiegostwo i sabotaż. Zarzuty były bezpodstawne — nigdy nie przedstawiono mu żadnych dowodów. Sprawa od początku miała charakter polityczny i międzynarodowy, i była pokłosiem wizyty Prezydenta Andrzeja Dudy w sąsiedniej Ruandzie.",
   },
   {
-    q: "Jak długo Mariusz przebywał w więzieniu Makala?",
-    a: "Mariusz spędził w Makala ponad 3 miesiące — od stycznia do maja 2024 roku. W tym czasie jego jedynym łącznikiem z zewnętrznym światem była kongijska adwokatka Carine.",
+    q: "Czy naprawdę groziła mu kara śmierci?",
+    a: "Tak. Za sabotaż przewidziana jest kara śmierci i taką otrzymał, ale dzięki zabiegom dyplomatycznym została ona złagodzona w ostatniej chwili do dożywocia.",
   },
   {
     q: "Jak wyglądały warunki w więzieniu?",
-    a: "Makala jest największym więzieniem Afryki Centralnej. Zaprojektowane na 1 500 więźniów, przetrzymuje ponad 15 000 osób. Brakuje jedzenia, wody, leków i przestrzeni. Każdy dzień to walka o przetrwanie w dosłownym sensie tego słowa.",
+    a: "Makala jest więzieniem, w którym nie ma ani jednego strażnika. Brutalna przemoc, śmiertelne choroby i codzienna niepewność, czy przeżyje kolejny dzień. Brakuje jedzenia, wody, leków i przestrzeni. Każdy dzień to walka o przetrwanie w dosłownym sensie tego słowa.",
   },
   {
-    q: "Kto pomógł w uwolnieniu?",
-    a: "W uwolnienie Mariusza zaangażowały się najwyższe szczeble polskiej dyplomacji — Prezydent RP Andrzej Duda i Minister Spraw Zagranicznych Radosław Sikorski. Polska uruchomiła kanały dyplomatyczne, których szczegóły do dziś nie są w pełni ujawnione.",
-  },
-  {
-    q: "Czy historia opisana w książce jest w 100% prawdziwa?",
-    a: "Tak. Książka jest dokumentem — napisanym na podstawie dziennika prowadzonego przez Mariusza w więzieniu, zeznań świadków, dokumentów sądowych i rozmów z osobami zaangażowanymi w sprawę. Żaden szczegół nie został zmyślony.",
+    q: "Kto pomógł mu wrócić do Polski?",
+    a: "W sprawę zaangażowały się polskie działania dyplomatyczne, bliscy oraz ludzie, którzy nagłośnili sprawę w mediach.",
   },
   {
     q: "Czy Mariusz bał się, że nie wróci?",
-    a: "Nie ukrywa, że śmierć była realna — zarówno z rąk innych więźniów, jak i z powodu warunków sanitarnych. Mówi wprost: myśl o dzieciach była silniejsza niż strach. To ona pozwoliła mu nie poddać się przez ponad trzy miesiące.",
+    a: "Nie ukrywa, że śmierć była realna — zarówno z rąk innych więźniów, jak i z powodu warunków. Mówi wprost: myśl o dzieciach była silniejsza niż strach. To ona pozwoliła mu nie poddać się przez ponad trzy miesiące.",
   },
   {
-    q: "Kim jest współautor Jarosław Kocemba?",
-    a: "Jarosław Kocemba to doświadczony dziennikarz śledczy, który przez miesiące pomagał Mariuszowi odtworzyć chronologię wydarzeń i zrozumieć dyplomatyczny kontekst sprawy. Jego wkład pozwolił pokazać historię z szerszej, geopolitycznej perspektywy.",
+    q: "Czy historia opisana w książce jest prawdziwa?",
+    a: 'Tak. „Kongijskie piekło” to historia oparta na prawdziwych wydarzeniach, relacjach, dokumentach i rekonstrukcji przeprowadzonej wspólnie ze współautorem Jarosławem Kocembą.',
   },
   {
     q: "Dlaczego Mariusz zdecydował się napisać tę książkę?",
-    a: "Nie po to, by szukać zemsty czy rozrachunków. Chciał, by świat zobaczył prawdę o kongijskim systemie więziennym i o tym, co dzieje się z ludźmi, którzy znajdą się w nim bez winy. Książka jest też hołdem dla wszystkich, którzy mu pomogli.",
-  },
-  {
-    q: "Czy Mariusz nadal wyjeżdża do Afryki?",
-    a: "Tak. Mariusz nie pozwolił, by to doświadczenie odebrało mu pasję do podróży i kontaktów z Afryką. Mówi, że odpowiedzialność za to, co pokazał światu, jest ważniejsza niż strach przed powrotem.",
+    a: "Żeby opowiedzieć, co naprawdę wydarzyło się w Kongo — i żeby ta historia nie zginęła razem z nim, gdy nie wiedział jeszcze, czy wróci żywy. Książka jest też hołdem dla wszystkich, którzy mu pomogli.",
   },
   {
     q: "Gdzie mogę kupić książkę?",
-    a: "Książkę można nabyć w sieci Empik — zarówno w sklepach stacjonarnych, jak i online. Dostępna jest w wersji drukowanej.",
+    a: 'Książka jest dostępna m.in. w Empiku. Najszybsza droga to przycisk „Kup książkę" na tej stronie.',
   },
   {
-    q: "Czy jest planowana wersja anglojęzyczna?",
-    a: "Rozmowy na temat tłumaczeń są prowadzone. Biorąc pod uwagę zasięg medialny tej historii — relacjonowały ją media z ponad 40 krajów — zainteresowanie wydań zagranicznych jest duże. Szczegóły zostaną ogłoszone na oficjalnych kanałach autora.",
+    q: "Czy będzie wersja anglojęzyczna?",
+    a: "Na ten moment książka ukazała się po polsku. Wersja anglojęzyczna oraz francuskojęzyczna jest naturalnym kolejnym krokiem.",
+  },
+  {
+    q: "Czy Mariusz nadal jeździ do Afryki?",
+    a: "Dziś najważniejsze jest opowiadanie tej historii, spotkania z czytelnikami i wystąpienia o przetrwaniu, odporności psychicznej i decyzjach podejmowanych pod presją.",
+  },
+  {
+    q: "Czy na podstawie książki powstanie film?",
+    a: "Trwają rozmowy z producentami zainteresowanymi ekranizacją książki, ale żadne decyzje jeszcze nie zapadły.",
   },
 ];
 

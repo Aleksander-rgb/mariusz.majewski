@@ -110,8 +110,7 @@ export default function MediaCoverage() {
             Historia, która obiegła świat
           </h2>
           <p className="text-[#888888] text-lg max-w-2xl mx-auto">
-            Relacja z kongijskiego więzienia była cytowana przez największe redakcje
-            na czterech kontynentach.
+            Wyrok z kongijskiego procesu był cytowany przez największe światowe redakcje.
           </p>
         </div>
       </div>

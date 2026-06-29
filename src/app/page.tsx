@@ -4,6 +4,7 @@ import Timeline from "@/components/Timeline";
 import CentralQuote from "@/components/CentralQuote";
 import About from "@/components/About";
 import MediaCoverage from "@/components/MediaCoverage";
+import PressArticles from "@/components/PressArticles";
 import BookExcerpt from "@/components/BookExcerpt";
 import FAQ from "@/components/FAQ";
 import BookCTA from "@/components/BookCTA";
@@ -18,6 +19,7 @@ export default function Home() {
       <CentralQuote />
       <About />
       <MediaCoverage />
+      <PressArticles />
       <BookExcerpt />
       <FAQ />
       <BookCTA />

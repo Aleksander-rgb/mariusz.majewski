@@ -22,7 +22,7 @@ export default function Hero() {
             className="text-[#888888] text-[11px] uppercase tracking-[0.3em] mb-5"
             style={{ fontFamily: "var(--font-inter)" }}
           >
-            POLSKA · KONGO · 2024
+            POLSKA • DR KONGO • 2024
           </p>
 
           <h1
@@ -38,9 +38,13 @@ export default function Hero() {
             className="text-[#F5F5F5]/70 text-base md:text-lg leading-[1.8] mb-10 max-w-[480px]"
             style={{ fontFamily: "var(--font-inter)" }}
           >
-            Bez ostrzeżenia. Bez tłumacza. Bez wyroku w języku, który rozumiał.
-            Mariusz Majewski spędził ponad 3 miesiące w największym więzieniu
-            Afryki Centralnej&nbsp;— Makala.
+            Bez dowodów. Bez szansy na obronę. Bez tłumacza.
+            <br />
+            Sam słuchał wyroku w języku, którego nie rozumiał.
+            <br />
+            Mariusz Majewski przeżył ponad 100 dni w piekle&nbsp;—
+            <br />
+            jednym z najbrutalniejszych więzień Afryki&nbsp;– Makala.
           </p>
 
           <a
@@ -48,7 +52,7 @@ export default function Hero() {
             className="inline-flex items-center gap-3 border border-[#C8A84B] text-[#C8A84B] px-8 py-3 text-[11px] uppercase tracking-[0.2em] hover:bg-[#C8A84B] hover:text-black transition-all duration-300"
             style={{ fontFamily: "var(--font-inter)" }}
           >
-            Czytaj historię
+            POZNAJ HISTORIĘ
             <span aria-hidden>↓</span>
           </a>
         </div>
