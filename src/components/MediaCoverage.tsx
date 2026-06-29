@@ -37,15 +37,17 @@ const row2 = logos.slice(half);
 
 function LogoItem({ logo }: { logo: (typeof logos)[number] }) {
   return (
-    <div className="flex-shrink-0 flex items-center justify-center px-10 h-12">
-      <Image
-        src={`/media-logos/${logo.file}`}
-        alt={logo.name}
-        width={logo.width}
-        height={48}
-        className="object-contain max-h-12 w-auto"
-        unoptimized
-      />
+    <div className="flex-shrink-0 flex items-center justify-center px-6">
+      <div className="flex items-center justify-center px-5 py-3 rounded-lg bg-white/8 h-16">
+        <Image
+          src={`/media-logos/${logo.file}`}
+          alt={logo.name}
+          width={logo.width}
+          height={40}
+          className="object-contain max-h-10 w-auto"
+          unoptimized
+        />
+      </div>
     </div>
   );
 }
