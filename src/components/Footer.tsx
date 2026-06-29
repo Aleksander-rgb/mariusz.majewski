@@ -58,6 +58,7 @@ export default function Footer() {
                 { label: "Fragment książki", href: "#fragment" },
                 { label: "FAQ", href: "#faq" },
                 { label: "Kup książkę", href: "#kup-ksiazke" },
+                { label: "Kontakt", href: "#kontakt" },
               ].map((link) => (
                 <li key={link.label}>
                   <a
