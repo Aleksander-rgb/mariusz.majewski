@@ -34,7 +34,7 @@ export default function CentralQuote() {
 
       <div className="relative max-w-4xl mx-auto text-center">
         <blockquote
-          className="text-[#F5F5F5] text-3xl md:text-4xl lg:text-[44px] leading-[1.35] mb-10"
+          className="text-[#E42A48] text-3xl md:text-4xl lg:text-[44px] leading-[1.35] mb-10"
           style={{
             fontFamily: "var(--font-playfair)",
             fontStyle: "italic",

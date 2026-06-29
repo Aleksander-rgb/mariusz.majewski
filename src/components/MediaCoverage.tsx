@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const logos = [
-  // Światowe agencje i stacje
   { file: "bbc.svg", name: "BBC News", width: 120 },
   { file: "reuters.svg", name: "Reuters", width: 110 },
   { file: "afp.svg", name: "AFP", width: 90 },
@@ -15,7 +14,6 @@ const logos = [
   { file: "france24.svg", name: "France 24", width: 110 },
   { file: "euronews.svg", name: "Euronews", width: 120 },
   { file: "voa.svg", name: "Voice of America", width: 110 },
-  // Polskie media
   { file: "tvn24.svg", name: "TVN24", width: 90 },
   { file: "tvn.svg", name: "TVN", width: 70 },
   { file: "tvp-info.svg", name: "TVP Info", width: 100 },
@@ -32,6 +30,49 @@ const logos = [
   { file: "dgp.png", name: "Dziennik Gazeta Prawna", width: 110 },
   { file: "fakt.svg", name: "Fakt", width: 80 },
 ];
+
+const half = Math.ceil(logos.length / 2);
+const row1 = logos.slice(0, half);
+const row2 = logos.slice(half);
+
+function LogoItem({ logo }: { logo: (typeof logos)[number] }) {
+  return (
+    <div className="flex-shrink-0 flex items-center justify-center px-10 h-12">
+      <Image
+        src={`/media-logos/${logo.file}`}
+        alt={logo.name}
+        width={logo.width}
+        height={48}
+        className="object-contain max-h-12 w-auto"
+        unoptimized
+      />
+    </div>
+  );
+}
+
+interface CarouselRowProps {
+  items: (typeof logos);
+  direction: "left" | "right";
+}
+
+function CarouselRow({ items, direction }: CarouselRowProps) {
+  const doubled = [...items, ...items];
+
+  return (
+    <div className="overflow-hidden w-full">
+      <div
+        className="flex w-max"
+        style={{
+          animation: `${direction === "left" ? "scroll-left" : "scroll-right"} ${items.length * 3}s linear infinite`,
+        }}
+      >
+        {doubled.map((logo, i) => (
+          <LogoItem key={`${logo.file}-${i}`} logo={logo} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function MediaCoverage() {
   const [visible, setVisible] = useState(false);
@@ -71,44 +112,20 @@ export default function MediaCoverage() {
             na czterech kontynentach.
           </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-x-8 gap-y-10">
-          {logos.map((logo, i) => (
-            <div
-              key={logo.file}
-              className="flex items-center justify-center"
-              style={{
-                opacity: visible ? 1 : 0,
-                transform: visible ? "translateY(0)" : "translateY(20px)",
-                transition: `opacity 0.5s ease ${i * 40}ms, transform 0.5s ease ${i * 40}ms`,
-              }}
-            >
-              <div className="relative flex items-center justify-center h-10 group cursor-default">
-                <Image
-                  src={`/media-logos/${logo.file}`}
-                  alt={logo.name}
-                  width={logo.width}
-                  height={40}
-                  className="object-contain max-h-10 w-auto"
-                  style={{
-                    filter: "grayscale(100%) brightness(0.55)",
-                    transition: "filter 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.filter =
-                      "grayscale(0%) brightness(1)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLImageElement).style.filter =
-                      "grayscale(100%) brightness(0.55)";
-                  }}
-                  unoptimized
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+      <div
+        className="flex flex-col gap-10"
+        style={{
+          opacity: visible ? 1 : 0,
+          transition: "opacity 0.7s ease 0.3s",
+        }}
+      >
+        <CarouselRow items={row1} direction="left" />
+        <CarouselRow items={row2} direction="right" />
+      </div>
 
+      <div className="max-w-6xl mx-auto px-6">
         <div
           className="mt-16 text-center"
           style={{

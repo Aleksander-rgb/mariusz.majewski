@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
 
           <h1
-            className="text-[#F5F5F5] text-5xl md:text-6xl lg:text-[72px] leading-[1.08] mb-6"
+            className="text-[#E42A48] text-5xl md:text-6xl lg:text-[72px] leading-[1.08] mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Skazany na dożywocie.
