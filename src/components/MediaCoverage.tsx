@@ -38,7 +38,7 @@ const row2 = logos.slice(half);
 function LogoItem({ logo }: { logo: (typeof logos)[number] }) {
   return (
     <div className="flex-shrink-0 flex items-center justify-center px-6">
-      <div className="flex items-center justify-center px-5 py-3 rounded-xl border border-white/10 h-16" style={{ background: "rgba(255,255,255,0.15)" }}>
+      <div className="flex items-center justify-center px-5 py-3 rounded-xl h-16 bg-white">
         <Image
           src={`/media-logos/${logo.file}`}
           alt={logo.name}
