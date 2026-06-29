@@ -63,13 +63,63 @@ export default function FAQ() {
     return () => observer.disconnect();
   }, []);
 
+  const half = Math.ceil(QUESTIONS.length / 2);
+  const col1 = QUESTIONS.slice(0, half);
+  const col2 = QUESTIONS.slice(half);
+
+  const renderItem = (item: (typeof QUESTIONS)[number], i: number) => (
+    <div
+      key={i}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(16px)",
+        transition: `opacity 0.5s ease ${i * 60}ms, transform 0.5s ease ${i * 60}ms`,
+      }}
+    >
+      <button
+        className="w-full text-left py-5 flex items-start justify-between gap-4 group"
+        onClick={() => setOpen(open === i ? null : i)}
+        aria-expanded={open === i}
+      >
+        <span
+          className="text-[#F5F5F5] text-base leading-snug group-hover:text-[#C8A84B] transition-colors duration-200 pr-2"
+          style={{ fontFamily: "var(--font-playfair)" }}
+        >
+          {item.q}
+        </span>
+        <span
+          className="flex-shrink-0 w-6 h-6 rounded-full border border-[#C8A84B]/40 flex items-center justify-center text-[#C8A84B] text-lg leading-none transition-transform duration-300 mt-0.5"
+          style={{ transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}
+          aria-hidden
+        >
+          +
+        </span>
+      </button>
+
+      <div
+        className="overflow-hidden"
+        style={{
+          maxHeight: open === i ? "400px" : "0",
+          transition: "max-height 0.4s ease",
+        }}
+      >
+        <p
+          className="text-[#888888] text-sm leading-[1.85] pb-5"
+          style={{ fontFamily: "var(--font-inter)" }}
+        >
+          {item.a}
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <section
       ref={ref}
       id="faq"
       className="py-20 md:py-28 bg-[#111111] px-6"
     >
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div
           className="mb-14"
           style={{
@@ -92,52 +142,13 @@ export default function FAQ() {
           </h2>
         </div>
 
-        <div className="divide-y divide-[#2A1F1F]">
-          {QUESTIONS.map((item, i) => (
-            <div
-              key={i}
-              style={{
-                opacity: visible ? 1 : 0,
-                transform: visible ? "translateY(0)" : "translateY(16px)",
-                transition: `opacity 0.5s ease ${i * 60}ms, transform 0.5s ease ${i * 60}ms`,
-              }}
-            >
-              <button
-                className="w-full text-left py-5 flex items-start justify-between gap-4 group"
-                onClick={() => setOpen(open === i ? null : i)}
-                aria-expanded={open === i}
-              >
-                <span
-                  className="text-[#F5F5F5] text-base md:text-lg leading-snug group-hover:text-[#C8A84B] transition-colors duration-200 pr-2"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  {item.q}
-                </span>
-                <span
-                  className="flex-shrink-0 w-6 h-6 rounded-full border border-[#C8A84B]/40 flex items-center justify-center text-[#C8A84B] text-lg leading-none transition-transform duration-300 mt-0.5"
-                  style={{ transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}
-                  aria-hidden
-                >
-                  +
-                </span>
-              </button>
-
-              <div
-                className="overflow-hidden"
-                style={{
-                  maxHeight: open === i ? "400px" : "0",
-                  transition: "max-height 0.4s ease",
-                }}
-              >
-                <p
-                  className="text-[#888888] text-sm md:text-base leading-[1.85] pb-5"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  {item.a}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20">
+          <div className="divide-y divide-[#2A1F1F]">
+            {col1.map((item, i) => renderItem(item, i))}
+          </div>
+          <div className="divide-y divide-[#2A1F1F]">
+            {col2.map((item, i) => renderItem(item, i + half))}
+          </div>
         </div>
       </div>
     </section>
