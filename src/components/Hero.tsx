@@ -9,6 +9,7 @@ export default function Hero() {
         fill
         priority
         className="object-cover object-center"
+        style={{ filter: "grayscale(60%) brightness(0.85)" }}
         quality={90}
       />
 
@@ -29,7 +30,7 @@ export default function Hero() {
             className="text-[#E42A48] text-5xl md:text-6xl lg:text-[72px] leading-[1.08] mb-6"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
-            Skazany na dożywocie.
+            Skazany na śmierć.
             <br />
             Wrócił.
           </h1>

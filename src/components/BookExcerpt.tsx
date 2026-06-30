@@ -101,7 +101,7 @@ export default function BookExcerpt() {
                 className="text-[#888888] text-xs italic"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
-                Fragment pochodzi z rozdziału IV. Treść może różnić się od wersji finalnej.
+                Fragment książki „Kongijskie piekło" — Polak w afrykańskim więzieniu. Historia prawdziwa.
               </p>
             </div>
           </div>

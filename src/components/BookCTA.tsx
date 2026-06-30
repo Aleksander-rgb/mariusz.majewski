@@ -110,8 +110,8 @@ export default function BookCTA() {
               className="text-[#F5F5F5]/75 text-base md:text-lg leading-[1.85] mb-8"
               style={{ fontFamily: "var(--font-inter)" }}
             >
-              Historia prawdziwa. Skazany na dożywocie w Afryce Centralnej
-              Polak, który wrócił — i postanowił opowiedzieć to światu.
+              Historia podróży, która zmieniła się w koszmar. Choć był niewinny, groziła mu kara śmierci.
+              Nadzieja potrafi jednak przetrwać wszystko. Nawet piekło.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -122,16 +122,16 @@ export default function BookCTA() {
                 className="inline-flex items-center justify-center gap-3 bg-[#C8A84B] hover:bg-[#D4B862] text-black px-8 py-4 text-[12px] uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:shadow-[0_0_30px_rgba(200,168,75,0.3)]"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
-                Kup na Empik
+                Kup książkę
                 <span aria-hidden>→</span>
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-6 mb-8">
               {[
-                { label: "Wydawca", value: "Wydawnictwo Fronda" },
-                { label: "Rok", value: "2024" },
-                { label: "Stron", value: "ok. 280" },
+                { label: "Wydawca", value: "Wydawnictwo Harde" },
+                { label: "Rok", value: "kwiecień 2026" },
+                { label: "Stron", value: "320" },
               ].map(({ label, value }) => (
                 <div key={label}>
                   <p
@@ -148,6 +148,39 @@ export default function BookCTA() {
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div className="border-t border-[#1A1A1A] pt-6 space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                <p
+                  className="text-[#888888] text-sm"
+                  style={{ fontFamily: "var(--font-inter)" }}
+                >
+                  Zaproszenia na spotkania autorskie i wystąpienia publiczne.
+                </p>
+                <a
+                  href="mailto:kontakt@mariuszmajewski.com.pl"
+                  className="text-[#C8A84B] hover:text-[#D4B862] text-sm transition-colors duration-200"
+                  style={{ fontFamily: "var(--font-inter)" }}
+                >
+                  kontakt@mariuszmajewski.com.pl
+                </a>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                <p
+                  className="text-[#888888] text-sm"
+                  style={{ fontFamily: "var(--font-inter)" }}
+                >
+                  Zapytania medialne, wywiady i współpraca:
+                </p>
+                <a
+                  href="mailto:kontakt@mariuszmajewski.com.pl"
+                  className="text-[#C8A84B] hover:text-[#D4B862] text-sm transition-colors duration-200"
+                  style={{ fontFamily: "var(--font-inter)" }}
+                >
+                  kontakt@mariuszmajewski.com.pl
+                </a>
+              </div>
             </div>
           </div>
         </div>

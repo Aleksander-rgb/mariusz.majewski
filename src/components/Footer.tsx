@@ -1,10 +1,10 @@
 export default function Footer() {
   const socials = [
-    { label: "Facebook", href: "#", icon: "f" },
-    { label: "Instagram", href: "#", icon: "ig" },
-    { label: "TikTok", href: "#", icon: "tt" },
-    { label: "YouTube", href: "#", icon: "yt" },
-    { label: "Grupa FB", href: "#", icon: "gr" },
+    { label: "Facebook", href: "https://www.facebook.com/mariusz.majewski.vip/?locale=pl_PL", icon: "f" },
+    { label: "Instagram", href: "https://www.instagram.com/mariusz.majewski.official", icon: "ig" },
+    { label: "YouTube", href: "https://www.youtube.com/@MariuszMajewskiOfficial", icon: "yt" },
+    { label: "TikTok", href: "https://www.tiktok.com/@mariusz.majewski.autor", icon: "tt" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/mariusz-majewski-38a97736/", icon: "li" },
   ];
 
   return (
@@ -24,8 +24,8 @@ export default function Footer() {
               className="text-[#888888] text-xs leading-relaxed mb-6"
               style={{ fontFamily: "var(--font-inter)" }}
             >
-              Autor książki „Kongijskie piekło".<br />
-              Polak, który przeżył Makala i wrócił, by o tym opowiedzieć.
+              Autor książki „Kongijskie piekło" wraz z Jarosławem Kocembą.<br />
+              Polak, niesłusznie oskarżony oraz skazany, który przeżył ponad sto dni w więzieniach Konga i wrócił, by opowiedzieć tę historię światu.
             </p>
             <div className="flex gap-3">
               {socials.map((s) => (
@@ -119,7 +119,7 @@ export default function Footer() {
             className="text-[#888888]/40 text-xs"
             style={{ fontFamily: "var(--font-inter)" }}
           >
-            „Kongijskie piekło" — historia prawdziwa
+            Stara wersja strony
           </p>
         </div>
       </div>
