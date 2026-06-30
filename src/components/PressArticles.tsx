@@ -16,6 +16,8 @@ const FEATURED = {
 const ARTICLES = [
   { source: "TOK FM", title: 'Polak w kongijskim piekle: „Zapomniałem, że jestem człowiekiem"', href: "https://www.tokfm.pl/swiat/polak-w-kongijskim-piekle-zapomnialem-ze-jestem-czlowiekiem?utm_id=97758_v0_s00_e0_tv1_a1dennhb4cs1bi&fbclid=IwY2xjawSwctZleHRuA2FlbQIxMABicmlkETI1ZTlkeXNvdWhNZ2lJMkJjc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvAb1yEGTQQmqCZVnPYW87CXRfRs09h7F3YevJ7eWaNXX5cMgnOtMffwjBi7_aem_J0b7Tk5HpHYbjmwXl_-rWQ" },
   { source: "Interia", title: "Jedna wypowiedź miała zmienić jego życie na zawsze. Polski podróżnik w kongijskim piekle", href: "https://wydarzenia.interia.pl/kraj/news-jedna-wypowiedz-miala-zmienic-jego-zycie-na-zawsze-polski-po,nId,23420033" },
+  { source: "Onet Podróże", title: "Polak trafił do kongijskiego więzienia. Cele wypełnione ludźmi jak bydłem", href: "https://podroze.onet.pl/ciekawe/polak-trafil-do-kongijskiego-wiezienia-cele-wypelnione-ludzmi-jak-bydlem/1qjwcde" },
+  { source: "Wyborcza", title: 'Polski podróżnik w Kongo: miała być kara śmierci, dostałem dożywocie', href: "https://wyborcza.pl/duzyformat/7,127290,32747674,polski-podroznik-w-kongo-miala-byc-kara-smierci-dostalem-dozywocie.html" },
 ];
 
 export default function PressArticles() {
@@ -111,7 +113,7 @@ export default function PressArticles() {
 
         {/* przyciski — pozostałe artykuły */}
         <div
-          className="flex flex-wrap gap-3"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-3"
           style={{
             opacity: visible ? 1 : 0,
             transition: "opacity 0.7s ease 0.35s",
