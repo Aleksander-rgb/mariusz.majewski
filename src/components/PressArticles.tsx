@@ -146,6 +146,28 @@ export default function PressArticles() {
           ))}
         </div>
 
+        {/* osadzony filmik YouTube */}
+        <div
+          className="mt-10"
+          style={{
+            opacity: visible ? 1 : 0,
+            transition: "opacity 0.7s ease 0.5s",
+          }}
+        >
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-sm rounded-xl overflow-hidden border border-[#2A1F1F]"
+              style={{ aspectRatio: "9/16" }}>
+              <iframe
+                src="https://www.youtube.com/embed/9lYfM7RRY_8"
+                title="Mariusz Majewski — YouTube Short"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
