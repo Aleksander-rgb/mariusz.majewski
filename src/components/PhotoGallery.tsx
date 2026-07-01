@@ -47,43 +47,44 @@ export default function PhotoGallery() {
           </h2>
         </div>
 
-        {/* mozaika — 2 wiersze, siatka 4 kolumny */}
+        {/* mozaika — 2 wiersze, siatka 4 kolumny, fixed height */}
         <div
-          className="grid grid-cols-4 gap-2 md:gap-3"
+          className="grid grid-cols-4 grid-rows-2 gap-2 md:gap-3"
           style={{
+            height: "480px",
             opacity: visible ? 1 : 0,
             transition: "opacity 0.8s ease 0.2s",
           }}
         >
           {/* wiersz 1: szerokie (2 kol) + dwa wąskie */}
-          <div className="col-span-2 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-2 row-span-1 relative overflow-hidden rounded-lg group">
             <Image src={PHOTOS[0].src} alt={PHOTOS[0].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg group">
             <Image src={PHOTOS[1].src} alt={PHOTOS[1].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg group">
             <Image src={PHOTOS[2].src} alt={PHOTOS[2].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
 
           {/* wiersz 2: dwa wąskie + szerokie (2 kol) */}
-          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg group">
             <Image src={PHOTOS[3].src} alt={PHOTOS[3].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg group">
             <Image src={PHOTOS[4].src} alt={PHOTOS[4].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-          <div className="col-span-2 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-2 row-span-1 relative overflow-hidden rounded-lg group">
             <Image src={PHOTOS[5].src} alt={PHOTOS[5].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
