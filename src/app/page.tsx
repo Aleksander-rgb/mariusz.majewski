@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import PhotoGallery from "@/components/PhotoGallery";
 import Timeline from "@/components/Timeline";
 import CentralQuote from "@/components/CentralQuote";
 import About from "@/components/About";
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Hero />
       <Stats />
+      <PhotoGallery />
       <Timeline />
       <CentralQuote />
       <About />
