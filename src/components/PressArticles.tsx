@@ -146,12 +146,23 @@ export default function PressArticles() {
           ))}
         </div>
 
-        {/* osadzony filmik YouTube */}
-        <div className="mt-10 flex justify-center">
+        {/* osadzone filmy YouTube */}
+        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <div className="rounded-xl overflow-hidden border border-[#2A1F1F]">
             <iframe
               src="https://www.youtube.com/embed/9lYfM7RRY_8"
-              title="Mariusz Majewski — YouTube Short"
+              title="Mariusz Majewski — YouTube Short 1"
+              width="315"
+              height="560"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden border border-[#2A1F1F]">
+            <iframe
+              src="https://www.youtube.com/embed/s7Oeedk5fFk"
+              title="Mariusz Majewski — YouTube Short 2"
               width="315"
               height="560"
               frameBorder="0"
