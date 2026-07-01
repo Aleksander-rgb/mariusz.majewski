@@ -127,7 +127,7 @@ export default function BookCTA() {
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-6 mb-8">
+            <div className="flex flex-wrap gap-6">
               {[
                 { label: "Wydawca", value: "Wydawnictwo Harde" },
                 { label: "Rok", value: "kwiecień 2026" },
@@ -150,38 +150,6 @@ export default function BookCTA() {
               ))}
             </div>
 
-            <div className="border-t border-[#1A1A1A] pt-6 space-y-3">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                <p
-                  className="text-[#888888] text-sm"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  Zaproszenia na spotkania autorskie i wystąpienia publiczne.
-                </p>
-                <a
-                  href="mailto:kontakt@mariuszmajewski.com.pl"
-                  className="text-[#C8A84B] hover:text-[#D4B862] text-sm transition-colors duration-200"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  kontakt@mariuszmajewski.com.pl
-                </a>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                <p
-                  className="text-[#888888] text-sm"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  Zapytania medialne, wywiady i współpraca:
-                </p>
-                <a
-                  href="mailto:kontakt@mariuszmajewski.com.pl"
-                  className="text-[#C8A84B] hover:text-[#D4B862] text-sm transition-colors duration-200"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  kontakt@mariuszmajewski.com.pl
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

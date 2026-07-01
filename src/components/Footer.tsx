@@ -33,6 +33,8 @@ export default function Footer() {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 border border-[#2A2A2A] hover:border-[#C8A84B] text-[#888888] hover:text-[#C8A84B] flex items-center justify-center text-[10px] uppercase tracking-wide transition-all duration-200"
                   style={{ fontFamily: "var(--font-inter)" }}
                 >
@@ -114,12 +116,6 @@ export default function Footer() {
             style={{ fontFamily: "var(--font-inter)" }}
           >
             © {new Date().getFullYear()} Mariusz Majewski. Wszelkie prawa zastrzeżone.
-          </p>
-          <p
-            className="text-[#888888]/40 text-xs"
-            style={{ fontFamily: "var(--font-inter)" }}
-          >
-            Stara wersja strony
           </p>
         </div>
       </div>

@@ -4,18 +4,17 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const FEATURED = {
-  source: "TVN24",
-  date: "15 maja 2024",
-  title: "Polak uwolniony z kongijskiego więzienia. Spędził tam ponad trzy miesiące",
+  source: "Interia",
+  date: "2024",
+  title: "Jedna wypowiedź miała zmienić jego życie na zawsze. Polski podróżnik w kongijskim piekle",
   excerpt:
-    "Mariusz Majewski, dziennikarz i podróżnik, po ponad trzech miesiącach spędzonych w największym więzieniu Afryki Centralnej wrócił do Polski. Jego sprawa poruszyła najwyższe szczeble polskiej dyplomacji.",
-  href: "#",
-  image: null,
+    "Mariusz Majewski trafił do jednego z najgroźniejszych więzień na świecie. Bez wyroku, bez tłumacza, bez szans na obronę — jego historia wstrząsnęła Polską i odbiła się echem na całym świecie.",
+  href: "https://wydarzenia.interia.pl/kraj/news-jedna-wypowiedz-miala-zmienic-jego-zycie-na-zawsze-polski-po,nId,23420033?fbclid=IwY2xjawSxaF5leHRuA2FlbQIxMABicmlkETIzbFp5Q0ZkbFQxeERtMjZGc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjeC4tnp1sQQzTQ19jP4jKR26iwfUNVbhcC3yzj89t_mJf-LicPDyU0XWsu-_aem_8K2yLMSLr_fooiWCYN0AYA",
+  image: "/press-interia.webp",
 };
 
 const ARTICLES = [
   { source: "TOK FM", title: 'Polak w kongijskim piekle: „Zapomniałem, że jestem człowiekiem"', href: "https://www.tokfm.pl/swiat/polak-w-kongijskim-piekle-zapomnialem-ze-jestem-czlowiekiem?utm_id=97758_v0_s00_e0_tv1_a1dennhb4cs1bi&fbclid=IwY2xjawSwctZleHRuA2FlbQIxMABicmlkETI1ZTlkeXNvdWhNZ2lJMkJjc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvAb1yEGTQQmqCZVnPYW87CXRfRs09h7F3YevJ7eWaNXX5cMgnOtMffwjBi7_aem_J0b7Tk5HpHYbjmwXl_-rWQ" },
-  { source: "Interia", title: "Jedna wypowiedź miała zmienić jego życie na zawsze. Polski podróżnik w kongijskim piekle", href: "https://wydarzenia.interia.pl/kraj/news-jedna-wypowiedz-miala-zmienic-jego-zycie-na-zawsze-polski-po,nId,23420033" },
   { source: "Onet Podróże", title: "Polak trafił do kongijskiego więzienia. Cele wypełnione ludźmi jak bydłem", href: "https://podroze.onet.pl/ciekawe/polak-trafil-do-kongijskiego-wiezienia-cele-wypelnione-ludzmi-jak-bydlem/1qjwcde" },
   { source: "Wyborcza", title: 'Polski podróżnik w Kongo: miała być kara śmierci, dostałem dożywocie', href: "https://wyborcza.pl/duzyformat/7,127290,32747674,polski-podroznik-w-kongo-miala-byc-kara-smierci-dostalem-dozywocie.html" },
 ];
@@ -71,7 +70,7 @@ export default function PressArticles() {
           <div className="relative overflow-hidden rounded-xl border border-[#2A1F1F] bg-[#111111] group-hover:border-[#C8A84B]/40 transition-colors duration-300">
             <div className="relative h-52 md:h-72 overflow-hidden">
               <Image
-                src="/press-featured.jpg"
+                src={FEATURED.image}
                 alt="Artykuł prasowy"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
