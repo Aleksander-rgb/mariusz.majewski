@@ -7,7 +7,6 @@ const PHOTOS = [
   { src: "/gallery/wiezienie-1.avif", alt: "Więzienie Makala, DR Kongo" },
   { src: "/gallery/wiezienie-2.avif", alt: "Więzienie Makala, DR Kongo" },
   { src: "/gallery/wiezienie-3.avif", alt: "Więzienie Makala, DR Kongo" },
-  { src: "/gallery/wiezienie-4.avif", alt: "Więzienie Makala, DR Kongo" },
   { src: "/gallery/wiezienie-5.jpg",  alt: "Więzienie Makala, DR Kongo" },
   { src: "/gallery/zamieszkanie-7.avif", alt: "Warunki w więzieniu Makala" },
   { src: "/gallery/wiezienie-8.webp", alt: "Więzienie Makala, DR Kongo" },
@@ -48,46 +47,47 @@ export default function PhotoGallery() {
           </h2>
         </div>
 
-        {/* mozaika */}
+        {/* mozaika — 2 wiersze, siatka 4 kolumny */}
         <div
-          className="grid grid-cols-3 grid-rows-3 gap-2 md:gap-3"
+          className="grid grid-cols-4 gap-2 md:gap-3"
           style={{
             opacity: visible ? 1 : 0,
             transition: "opacity 0.8s ease 0.2s",
           }}
         >
-          {/* wiersz 1: duże zdjęcie (2 kol) + małe */}
-          <div className="col-span-2 row-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          {/* wiersz 1: szerokie (2 kol) + dwa wąskie */}
+          <div className="col-span-2 relative overflow-hidden rounded-lg aspect-video group">
             <Image src={PHOTOS[0].src} alt={PHOTOS[0].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
             <Image src={PHOTOS[1].src} alt={PHOTOS[1].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-
-          {/* wiersz 2: małe + duże (2 kol) */}
-          <div className="col-span-1 row-span-1 relative overflow-hidden rounded-lg aspect-video group">
+          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
             <Image src={PHOTOS[2].src} alt={PHOTOS[2].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-          <div className="col-span-2 row-span-1 relative overflow-hidden rounded-lg aspect-video group">
+
+          {/* wiersz 2: dwa wąskie + szerokie (2 kol) */}
+          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
             <Image src={PHOTOS[3].src} alt={PHOTOS[3].alt} fill
               className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
             <div className="absolute inset-0 bg-black/20" />
           </div>
-
-          {/* wiersz 3: trzy równe */}
-          {PHOTOS.slice(4).map((photo, i) => (
-            <div key={i} className="col-span-1 row-span-1 relative overflow-hidden rounded-lg aspect-video group">
-              <Image src={photo.src} alt={photo.alt} fill
-                className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
-              <div className="absolute inset-0 bg-black/20" />
-            </div>
-          ))}
+          <div className="col-span-1 relative overflow-hidden rounded-lg aspect-video group">
+            <Image src={PHOTOS[4].src} alt={PHOTOS[4].alt} fill
+              className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
+          <div className="col-span-2 relative overflow-hidden rounded-lg aspect-video group">
+            <Image src={PHOTOS[5].src} alt={PHOTOS[5].alt} fill
+              className="object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-700" unoptimized />
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
         </div>
 
         <p
