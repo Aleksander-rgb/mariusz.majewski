@@ -170,6 +170,17 @@ export default function PressArticles() {
               allowFullScreen
             />
           </div>
+          <div className="rounded-xl overflow-hidden border border-[#2A1F1F]">
+            <iframe
+              src="https://www.youtube.com/embed/XeKRjPAB7K4"
+              title="Mariusz Majewski — YouTube Short 3"
+              width="315"
+              height="560"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
 
       </div>
