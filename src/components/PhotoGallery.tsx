@@ -9,7 +9,7 @@ const PHOTOS = [
   { src: "/gallery/wiezienie-3.avif", alt: "Więzienie Makala, DR Kongo" },
   { src: "/gallery/wiezienie-5.jpg",  alt: "Więzienie Makala, DR Kongo" },
   { src: "/gallery/zamieszkanie-7.avif", alt: "Warunki w więzieniu Makala" },
-  { src: "/gallery/wiezienie-8.webp", alt: "Więzienie Makala, DR Kongo" },
+  { src: "/gallery/wiezienie-4.avif", alt: "Więzienie Makala, DR Kongo" },
 ];
 
 export default function PhotoGallery() {
