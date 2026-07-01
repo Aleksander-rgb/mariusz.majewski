@@ -147,7 +147,7 @@ export default function PressArticles() {
         </div>
 
         {/* osadzone filmy YouTube */}
-        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-8 px-8">
           <div className="rounded-xl overflow-hidden border border-[#2A1F1F]">
             <iframe
               src="https://www.youtube.com/embed/9lYfM7RRY_8"
