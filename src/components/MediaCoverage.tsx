@@ -31,13 +31,9 @@ const logos = [
   { file: "fakt.svg", name: "Fakt", width: 80 },
 ];
 
-const half = Math.ceil(logos.length / 2);
-const row1 = logos.slice(0, half);
-const row2 = logos.slice(half);
-
 function LogoItem({ logo }: { logo: (typeof logos)[number] }) {
   return (
-    <div className="flex-shrink-0 flex items-center justify-center px-6">
+    <div className="flex-shrink-0 flex items-center justify-center px-4">
       <div className="flex items-center justify-center px-5 py-3 rounded-xl h-16 bg-white">
         <Image
           src={`/media-logos/${logo.file}`}
@@ -52,21 +48,13 @@ function LogoItem({ logo }: { logo: (typeof logos)[number] }) {
   );
 }
 
-interface CarouselRowProps {
-  items: (typeof logos);
-  direction: "left" | "right";
-}
-
-function CarouselRow({ items, direction }: CarouselRowProps) {
-  const doubled = [...items, ...items];
-
+function Carousel() {
+  const doubled = [...logos, ...logos];
   return (
     <div className="overflow-hidden w-full">
       <div
         className="flex w-max"
-        style={{
-          animation: `${direction === "left" ? "scroll-left" : "scroll-right"} ${items.length * 3}s linear infinite`,
-        }}
+        style={{ animation: `scroll-left ${logos.length * 3}s linear infinite` }}
       >
         {doubled.map((logo, i) => (
           <LogoItem key={`${logo.file}-${i}`} logo={logo} />
@@ -116,14 +104,12 @@ export default function MediaCoverage() {
       </div>
 
       <div
-        className="flex flex-col gap-10"
         style={{
           opacity: visible ? 1 : 0,
           transition: "opacity 0.7s ease 0.3s",
         }}
       >
-        <CarouselRow items={row1} direction="left" />
-        <CarouselRow items={row2} direction="right" />
+        <Carousel />
       </div>
 
       <div className="max-w-6xl mx-auto px-6">
