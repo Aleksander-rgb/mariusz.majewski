@@ -33,14 +33,14 @@ const logos = [
 
 function LogoItem({ logo }: { logo: (typeof logos)[number] }) {
   return (
-    <div className="flex-shrink-0 flex items-center justify-center px-4">
-      <div className="flex items-center justify-center px-5 py-3 rounded-xl h-16 bg-white">
+    <div className="flex-shrink-0 flex items-center justify-center px-2 sm:px-4">
+      <div className="flex items-center justify-center px-3 py-2 sm:px-5 sm:py-3 rounded-lg sm:rounded-xl h-11 sm:h-16 bg-white">
         <Image
           src={`/media-logos/${logo.file}`}
           alt={logo.name}
           width={logo.width}
           height={40}
-          className="object-contain max-h-10 w-auto"
+          className="object-contain max-h-7 sm:max-h-10 w-auto max-w-[80px] sm:max-w-none"
           unoptimized
         />
       </div>
