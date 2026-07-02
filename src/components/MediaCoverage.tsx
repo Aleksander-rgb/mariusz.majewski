@@ -54,7 +54,7 @@ function Carousel() {
     <div className="overflow-hidden w-full">
       <div
         className="flex w-max"
-        style={{ animation: `scroll-left ${logos.length * 3}s linear infinite` }}
+        style={{ animation: `scroll-left var(--carousel-duration) linear infinite` }}
       >
         {doubled.map((logo, i) => (
           <LogoItem key={`${logo.file}-${i}`} logo={logo} />
