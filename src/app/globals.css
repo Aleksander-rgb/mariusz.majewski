@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --carousel-duration: 64s;
+  --carousel-duration: 38s;
   --gold: #C8A84B;
   --rust: #8B2020;
   --dark-bg: #0A0A0A;

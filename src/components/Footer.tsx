@@ -87,6 +87,12 @@ export default function Footer() {
               className="text-[#888888] text-sm leading-relaxed mb-4"
               style={{ fontFamily: "var(--font-inter)" }}
             >
+              Zaproszenia na spotkania autorskie i wystąpienia publiczne.
+            </p>
+            <p
+              className="text-[#888888] text-sm leading-relaxed mb-4"
+              style={{ fontFamily: "var(--font-inter)" }}
+            >
               Zapytania medialne, wywiady i współpraca:
             </p>
             <a
