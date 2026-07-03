@@ -56,7 +56,9 @@ export default function Nav() {
             )
           )}
           <a
-            href="#kup-ksiazke"
+            href="https://www.empik.com/kongijskie-pieklo-polak-w-afrykanskim-wiezieniu-historia-prawdziwa-kocemba-jaroslaw-majewski-mariusz,p1700222284,ksiazka-p?qa=majewski%20mariusz&ac=true"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-[#C8A84B] text-[#C8A84B] hover:bg-[#C8A84B] hover:text-black px-5 py-2 text-[11px] uppercase tracking-[0.15em] transition-all duration-300"
             style={{ fontFamily: "var(--font-inter)" }}
           >

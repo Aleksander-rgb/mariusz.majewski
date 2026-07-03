@@ -105,7 +105,9 @@ export default function Footer() {
 
             <div className="mt-8">
               <a
-                href="#kup-ksiazke"
+                href="https://www.empik.com/kongijskie-pieklo-polak-w-afrykanskim-wiezieniu-historia-prawdziwa-kocemba-jaroslaw-majewski-mariusz,p1700222284,ksiazka-p?qa=majewski%20mariusz&ac=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-[#C8A84B] text-[#C8A84B] hover:bg-[#C8A84B] hover:text-black px-5 py-2.5 text-[11px] uppercase tracking-[0.2em] transition-all duration-300"
                 style={{ fontFamily: "var(--font-inter)" }}
               >

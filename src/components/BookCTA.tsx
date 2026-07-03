@@ -116,7 +116,7 @@ export default function BookCTA() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a
-                href="https://www.empik.com"
+                href="https://www.empik.com/kongijskie-pieklo-polak-w-afrykanskim-wiezieniu-historia-prawdziwa-kocemba-jaroslaw-majewski-mariusz,p1700222284,ksiazka-p?qa=majewski%20mariusz&ac=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#C8A84B] hover:bg-[#D4B862] text-black px-8 py-4 text-[12px] uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:shadow-[0_0_30px_rgba(200,168,75,0.3)]"
