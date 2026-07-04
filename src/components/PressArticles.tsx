@@ -4,13 +4,13 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const FEATURED = {
-  source: "Interia",
+  source: "TVN24",
   date: "2024",
-  title: "Jedna wypowiedź miała zmienić jego życie na zawsze. Polski podróżnik w kongijskim piekle",
+  title: "Polski podróżnik skazany w Kongo na dożywocie za szpiegostwo. Interwencja prezydenta i MSZ",
   excerpt:
     "Mariusz Majewski trafił do jednego z najgroźniejszych więzień na świecie. Bez wyroku, bez tłumacza, bez szans na obronę — jego historia wstrząsnęła Polską i odbiła się echem na całym świecie.",
-  href: "https://wydarzenia.interia.pl/kraj/news-jedna-wypowiedz-miala-zmienic-jego-zycie-na-zawsze-polski-po,nId,23420033?fbclid=IwY2xjawSxaF5leHRuA2FlbQIxMABicmlkETIzbFp5Q0ZkbFQxeERtMjZGc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjeC4tnp1sQQzTQ19jP4jKR26iwfUNVbhcC3yzj89t_mJf-LicPDyU0XWsu-_aem_8K2yLMSLr_fooiWCYN0AYA",
-  image: "/press-interia.webp",
+  href: "https://tvn24.pl/polska/kongo-polski-podroznik-mariusz-majewski-skazany-na-dozywocie-za-szpiegostwo-interwencja-prezydenta-i-msz-st7932930",
+  image: "/press-tvn24.jpg",
 };
 
 const ARTICLES = [
