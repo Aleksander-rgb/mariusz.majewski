@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { fbqEvent } from "@/lib/fbq";
 
 export default function BookCTA() {
   const [visible, setVisible] = useState(false);
@@ -119,6 +120,7 @@ export default function BookCTA() {
                 href="https://www.empik.com/kongijskie-pieklo-polak-w-afrykanskim-wiezieniu-historia-prawdziwa-kocemba-jaroslaw-majewski-mariusz,p1700222284,ksiazka-p?qa=majewski%20mariusz&ac=true"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => fbqEvent("InitiateCheckout", { content_name: "Kongijskie piekło" })}
                 className="inline-flex items-center justify-center gap-3 bg-[#C8A84B] hover:bg-[#D4B862] text-black px-8 py-4 text-[12px] uppercase tracking-[0.2em] font-medium transition-all duration-300 hover:shadow-[0_0_30px_rgba(200,168,75,0.3)]"
                 style={{ fontFamily: "var(--font-inter)" }}
               >

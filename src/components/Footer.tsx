@@ -1,3 +1,7 @@
+"use client";
+
+import { fbqEvent } from "@/lib/fbq";
+
 export default function Footer() {
   const socials = [
     { label: "Facebook", href: "https://www.facebook.com/mariusz.majewski.vip/?locale=pl_PL", icon: "f" },
@@ -108,6 +112,7 @@ export default function Footer() {
                 href="https://www.empik.com/kongijskie-pieklo-polak-w-afrykanskim-wiezieniu-historia-prawdziwa-kocemba-jaroslaw-majewski-mariusz,p1700222284,ksiazka-p?qa=majewski%20mariusz&ac=true"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => fbqEvent("InitiateCheckout", { content_name: "Kongijskie piekło" })}
                 className="inline-flex items-center gap-2 border border-[#C8A84B] text-[#C8A84B] hover:bg-[#C8A84B] hover:text-black px-5 py-2.5 text-[11px] uppercase tracking-[0.2em] transition-all duration-300"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
