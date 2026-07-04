@@ -14,9 +14,14 @@ const FEATURED = {
 };
 
 const ARTICLES = [
-  { source: "TOK FM", title: 'Polak w kongijskim piekle: „Zapomniałem, że jestem człowiekiem"', href: "https://www.tokfm.pl/swiat/polak-w-kongijskim-piekle-zapomnialem-ze-jestem-czlowiekiem?utm_id=97758_v0_s00_e0_tv1_a1dennhb4cs1bi&fbclid=IwY2xjawSwctZleHRuA2FlbQIxMABicmlkETI1ZTlkeXNvdWhNZ2lJMkJjc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvAb1yEGTQQmqCZVnPYW87CXRfRs09h7F3YevJ7eWaNXX5cMgnOtMffwjBi7_aem_J0b7Tk5HpHYbjmwXl_-rWQ" },
-  { source: "Onet Podróże", title: "Polak trafił do kongijskiego więzienia. Cele wypełnione ludźmi jak bydłem", href: "https://podroze.onet.pl/ciekawe/polak-trafil-do-kongijskiego-wiezienia-cele-wypelnione-ludzmi-jak-bydlem/1qjwcde" },
-  { source: "Wyborcza", title: 'Polski podróżnik w Kongo: miała być kara śmierci, dostałem dożywocie', href: "https://wyborcza.pl/duzyformat/7,127290,32747674,polski-podroznik-w-kongo-miala-byc-kara-smierci-dostalem-dozywocie.html" },
+  { source: "Polskie Radio Trójka", title: "Mariusz Majewski: dramatyczne szczegóły pobytu w kongijskim więzieniu", href: "https://trojka.polskieradio.pl/artykul/3384611,mariusz-majewski-dramatyczne-szczegoly-pobytu-w-kongijskim-wiezieniu" },
+  { source: "Rzeczpospolita", title: "Podróżnik z Polski skazany w Kongo na dożywocie. Ruch prezydenta Dudy", href: "https://www.rp.pl/za-granica/art40469911-podroznik-z-polski-skazany-w-kongo-na-dozywocie-ruch-prezydenta-dudy" },
+  { source: "Onet Podróże", title: "Nie mogłem oderwać oczu od martwych ciał. Polak w więzieniu w Afryce", href: "https://podroze.onet.pl/aktualnosci/nie-moglem-oderwac-oczu-od-martwych-cial-polak-w-wiezieniu-w-afryce/bddr9z2" },
+  { source: "RMF24", title: "Polak skazany w DR Konga na dożywocie został uwolniony", href: "https://www.rmf24.pl/fakty/swiat/news-polak-skazany-w-dr-konga-na-dozywocie-zostal-uwolniony,nId,7538735" },
+  { source: "Radio ZET", title: "Spędził trzy miesiące w kongijskim więzieniu. Pół litra wody na dwa dni, przemoc, koszmar", href: "https://wiadomosci.radiozet.pl/swiat/spedzil-trzy-miesiace-w-kongijskim-wiezieniu-pol-litra-wody-na-dwa-dni-przemoc-koszmar" },
+  { source: "WP", title: "Polak negocjował z Al-Kaidą. Pogawędka o Lewandowskim, by wybadać grunt", href: "https://wiadomosci.wp.pl/polak-negocjowal-z-al-kaida-pogawedka-o-lewandowskim-by-wybadac-grunt-7288059243690080a" },
+  { source: "Interia", title: "Polak więziony w afrykańskim kraju. Urządzono mu pokazowy proces", href: "https://wydarzenia.interia.pl/zagranica/news-polak-wieziony-w-afrykanskim-kraju-urzadzono-mu-pokazowy-pro,nId,7529375" },
+  { source: "Zero.pl", title: "100 dni w kongijskim piekle", href: "https://zero.pl/news/100-dni-w-kongijskim-piekle" },
 ];
 
 export default function PressArticles() {
