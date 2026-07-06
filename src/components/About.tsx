@@ -88,23 +88,6 @@ export default function About() {
               okres w życiu.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6">
-              <div className="border-l-2 border-[#C8A84B] pl-4">
-                <p
-                  className="text-[#F5F5F5] text-sm font-medium mb-1"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  Jarosław Kocemba
-                </p>
-                <p
-                  className="text-[#888888] text-xs leading-relaxed"
-                  style={{ fontFamily: "var(--font-inter)" }}
-                >
-                  Współautor książki. Dziennikarz śledczy, który pomógł odtworzyć przebieg
-                  wydarzeń i ich międzynarodowy kontekst.
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* portret — 40% (2 z 5 kolumn) */}

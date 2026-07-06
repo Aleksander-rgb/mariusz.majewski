@@ -91,12 +91,6 @@ export default function PhotoGallery() {
           </div>
         </div>
 
-        <p
-          className="text-[#555555] text-xs mt-4 text-center"
-          style={{ fontFamily: "var(--font-inter)" }}
-        >
-          Więzienie Makala, Kinszasa — jedno z najbardziej przeludnionych więzień na świecie
-        </p>
       </div>
     </section>
   );

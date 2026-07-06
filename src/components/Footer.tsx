@@ -4,7 +4,7 @@ import { fbqEvent } from "@/lib/fbq";
 
 export default function Footer() {
   const socials = [
-    { label: "Facebook", href: "https://www.facebook.com/mariusz.majewski.vip/?locale=pl_PL", icon: "f" },
+    { label: "Facebook", href: "https://www.facebook.com/OfficialMariuszMajewski/", icon: "f" },
     { label: "Instagram", href: "https://www.instagram.com/mariusz.majewski.official", icon: "ig" },
     { label: "YouTube", href: "https://www.youtube.com/@MariuszMajewskiOfficial", icon: "yt" },
     { label: "TikTok", href: "https://www.tiktok.com/@mariusz.majewski.autor", icon: "tt" },

@@ -102,7 +102,7 @@ export default function BookCTA() {
               className="text-[#888888] text-sm mb-1"
               style={{ fontFamily: "var(--font-inter)" }}
             >
-              Mariusz Majewski, Jarosław Kocemba
+              Mariusz Majewski
             </p>
 
             <div className="w-10 h-px bg-[#C8A84B]/40 my-6" />
